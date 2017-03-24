@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio Evenent </title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <form name="calculadora" id="calculadora">
+      <table id="calc">
+        <tr>
+          <th colspan=4><input id="boton" name="display"></th>
+        </tr>
+        <tr>
+          <td><input type="button" id = "1" value="1" onclick="calculadora.display.value+='1'" /></td>
+          <td><input type="button" id = "2" value="2" onclick="calculadora.display.value+='2'" /></td>
+          <td><input type="button" id = "3" value="3" onclick="calculadora.display.value+='3'" /></td>
+          <td><input type="button" id = "suma" value="+" onclick="comprobar(); calculadora.display.value+='+'"  /></td>
+        </tr>
+        <tr>
+          <td><input type="button" id = "4" value="4" onclick="calculadora.display.value+='4'" /></td>
+          <td><input type="button" id = "5" value="5" onclick="calculadora.display.value+='5'" /></td>
+          <td><input type="button" id = "6" value="6" onclick="calculadora.display.value+='6'" /></td>
+          <td><input type="button" id = "menos" value="-" onclick="comprobar(); calculadora.display.value+='-'" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" id = "7" value="7" onclick="calculadora.display.value+='7'" /></td>
+          <td><input type="button" id = "8" value="8" onclick="calculadora.display.value+='8'" /></td>
+          <td><input type="button" id = "9" value="9" onclick="calculadora.display.value+='9'" /></td>
+          <td><input type="button" id = "multipl" value="*" onclick="comprobar(); calculadora.display.value+='*'" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" id = "punto" value="." onclick="calculadora.display.value+='.'" /></td>
+          <td><input type="button" id = "0" value="0" onclick="calculadora.display.value+='0'" /></td>
+          <td><input type="button" id = "igular" value="=" onclick="resultado();" /></td>
+          <td><input type="button" id = "divid" value="/" onclick="comprobar();calculadora.display.value+='/'" /></td>
+        </tr>
+      </table>
+    </form>
+    <script src="javascript.js"></script>
+  </body>
+</html>
